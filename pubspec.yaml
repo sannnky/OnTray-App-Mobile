@@ -1,0 +1,47 @@
+name: ontray_app
+description: Aplikasi Katering Mahasiswa OnTray.
+publish_to: "none" # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # 1. Icons iOS style (Standard)
+  cupertino_icons: ^1.0.6
+
+  # 2. Untuk koneksi ke Laravel (API)
+  http: ^1.2.0
+
+  # 3. Untuk format Rupiah & Tanggal
+  intl: ^0.20.2
+
+  # 4. Untuk mengubah Nama Hari jadi Bahasa Indonesia ("Monday" -> "Senin")
+  flutter_localizations:
+    sdk: flutter
+
+  # 5. Untuk simpan Nama & Alamat di HP (biar gak ilang pas di-close)
+  shared_preferences: ^2.2.2
+
+  # 6. Biar font-nya bagus (Poppins)
+  google_fonts: ^6.1.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # Linter untuk cek kodingan rapi/tidak
+  flutter_lints: ^3.0.0
+
+flutter:
+  # Menggunakan icon Material Design (Android)
+  uses-material-design: true
+
+  # Jika nanti kamu mau pakai gambar dari folder aset (bukan internet),
+  # uncomment bagian di bawah ini:
+  # assets:
+  #   - assets/images/
